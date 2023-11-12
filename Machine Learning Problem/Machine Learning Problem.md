@@ -37,42 +37,42 @@ Sebelumnnya machine learning digunakan untuk masalah yang sulit untuk manusia da
 - machine learning model adalah hypothesis set + learning algorithm
 
 ## Paradigma Machine Learning
-    - **supervised** adalah paradigma ML ketika terdapat input, ouput/label dan dapat memprediksi ouput baru jika diberikan inputan baru. misal 1000 email yang dipetakan menjadi email spam or not
-    - **unsupervised**, jika hanya ada input saja tanpa ada label. contoh clustering misal mesin koin yang terdapt 10000 koin data, untuk clustering dapat dilakukan dengan memperhatikan beratnya.
-    - **reinforcement**, label datang belakang. jadi terdapat label diakhir proses. contoh main catur, dimana untuk menjalankan keputusan mengharuskan feedback dari lawan. manusia belajar dari reinforcement dan pengembangan masih terus dilakukan.
+- **supervised** adalah paradigma ML ketika terdapat input, ouput/label dan dapat memprediksi ouput baru jika diberikan inputan baru. misal 1000 email yang dipetakan menjadi email spam or not
+- **unsupervised**, jika hanya ada input saja tanpa ada label. contoh clustering misal mesin koin yang terdapt 10000 koin data, untuk clustering dapat dilakukan dengan memperhatikan beratnya.
+- **reinforcement**, label datang belakang. jadi terdapat label diakhir proses. contoh main catur, dimana untuk menjalankan keputusan mengharuskan feedback dari lawan. manusia belajar dari reinforcement dan pengembangan masih terus dilakukan.
 
 ## Gambaran Luas ML
 ![Alt text](image-1.png)
-    - Machine learning merupakan kumpulan teknik yang berjumlahnya mencapai ribuan.
-    - model = hypotehsis set + algorithm
-    - method = how to make works well
-    - paradigm = the way we see ML Problems
+- Machine learning merupakan kumpulan teknik yang berjumlahnya mencapai ribuan.
+- model = hypotehsis set + algorithm
+- method = how to make works well
+- paradigm = the way we see ML Problems
 
     
 ## Supervised learning
-    - masalah : bagaimana kita melakukan estimasi/aproksimasi/pendekatan unknown function yang memetakan data ke label
-    - misal label atau ouput adalah
-        - kategori maka klasifikasi
-        - kontinu maka regresi
-    - membuat hypotesis set > nearest neighbor, linear model, decision tree
-    - teknik > memilih algoritma untuk menemukan fungsi yang paling mendekati dengan error yang paling kecil
+- masalah : bagaimana kita melakukan estimasi/aproksimasi/pendekatan unknown function yang memetakan data ke label
+- misal label atau ouput adalah
+  - kategori maka klasifikasi
+  - kontinu maka regresi
+- membuat hypotesis set > nearest neighbor, linear model, decision tree
+- teknik > memilih algoritma untuk menemukan fungsi yang paling mendekati dengan error yang paling kecil
     
-    contoh
-    - problem = simple linear regression
-    - hypotesis set = linear model - polynomial
-    - goal = good generalization
-    - learning algoritm,
-        - miniminze SE function E with GD
-        - minimize RMSE
+contoh
+- problem = simple linear regression
+- hypotesis set = linear model - polynomial
+- goal = good generalization
+- learning algoritm,
+  - miniminze SE function E with GD
+  - minimize RMSE
     
 ![Alt text](image-4.png)
 
-    - Mencari final hypotesis dari fungsi polynomial dari fungsi hijau yang tidak diketahui.
-    - overfitting terjadi ketika di train bagus dilatih jelek
-    - teknik overfitting
+- Mencari final hypotesis dari fungsi polynomial dari fungsi hijau yang tidak diketahui.
+- overfitting terjadi ketika di train bagus dilatih jelek
+- teknik overfitting
         - regulerisasi
     
 ## regularisasi
 regulerisasi adalah menambahkan  faktor dibelakang error function, ditambahkan lambda w^2  untuk meregularisasi nilai error jika terlalu besar akan diturunkan jika terlalu kecil akan dinaikan
-    - L1 untuk lamba pangkat 1
-    - L2 untuk lambda pangkat 2
+- L1 untuk lamba pangkat 1
+- L2 untuk lambda pangkat 2
